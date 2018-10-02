@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.main_home_button)
     Button homeBtn;
-    @BindView(R.id.main_app_toolbar)
-    Toolbar toolbar;
+//    @BindView(R.id.main_app_toolbar)
+//    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         startAnimation(textView);
 
         ButterKnife.bind(this);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
 
         shader = new LinearGradient(0,0,0,gradientTextView.getTextSize(), Color.RED,Color.BLUE,Shader.TileMode.CLAMP);
         gradientTextView.getPaint().setShader(shader);

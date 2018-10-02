@@ -6,11 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/main_app_toolbar"
-        layout="@layout/app_toolbar"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/main_app_name_textView"
         android:layout_width="wrap_content"
