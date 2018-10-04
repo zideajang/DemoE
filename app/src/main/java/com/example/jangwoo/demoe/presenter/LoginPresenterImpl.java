@@ -15,14 +15,14 @@ public class LoginPresenterImpl implements LoginPresenter{
 
     @Override
     public void login(String username, String password) {
-        Valuator emptyValuate = new UsernameEmptyValuate();
-        ValuatorChain valuatorChain = new ValuatorChain(emptyValuate);
-
-        System.out.println(valuatorChain.evaluate(new User(username)));
-        if(valuatorChain.evaluate(new User(username))){
-            loginView.showMessage("empty username");
-            return;
-        }
+//        Valuator emptyValuate = new UsernameEmptyValuate();
+//        ValuatorChain valuatorChain = new ValuatorChain(emptyValuate);
+//
+//        System.out.println(valuatorChain.evaluate(new User(username)));
+//        if(valuatorChain.evaluate(new User(username))){
+//            loginView.showMessage("empty username");
+//            return;
+//        }
 
         if(repository.login(username,password)){
             loginView.successLogin();

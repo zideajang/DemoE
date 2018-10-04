@@ -12,14 +12,19 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".home.HomeActivity" />
         <activity android:name=".splash.SplashActivity" />
-        <activity android:name=".DemoTwoActivity">
+        <activity android:name=".DemoTwoActivity" />
+        <activity android:name=".DemoThreeActivity" />
+        <activity android:name=".DemoFiveActivity" />
+        <activity android:name=".DemoSixActivity"></activity>
+        <activity android:name=".SearchOneActivity">
         </activity>
-        <activity android:name=".DemoThreeActivity"></activity>
-        <activity android:name=".DemoFiveActivity">
+        <activity android:name=".DemoSevenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
