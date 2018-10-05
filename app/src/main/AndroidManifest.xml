@@ -15,10 +15,11 @@
         <activity android:name=".DemoTwoActivity" />
         <activity android:name=".DemoThreeActivity" />
         <activity android:name=".DemoFiveActivity" />
-        <activity android:name=".DemoSixActivity"></activity>
-        <activity android:name=".SearchOneActivity">
-        </activity>
+        <activity android:name=".DemoSixActivity" />
+        <activity android:name=".SearchOneActivity"></activity>
         <activity android:name=".DemoSevenActivity">
+        </activity>
+        <activity android:name=".DemoEightActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
