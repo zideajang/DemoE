@@ -6,8 +6,4 @@ public class DanishBakery implements Bakery {
         return new DanishPastry(topping);
     }
 
-    @Override
-    public Cake bakeCake() {
-        return new Blekage();
-    }
 }

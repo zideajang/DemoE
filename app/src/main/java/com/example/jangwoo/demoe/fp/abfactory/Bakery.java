@@ -4,5 +4,4 @@ public interface Bakery {
 
     Pastry bakePastry(Topping topping);
 
-    Cake bakeCake();
 }
