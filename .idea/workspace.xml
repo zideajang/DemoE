@@ -17,16 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e3f95fb-edca-4b07-9ef1-89f822837a3a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/abfactory/AnotherBakery.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/Burnt.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/Fire.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/Food.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/LessonOne.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/MakeshiftOven.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/Oven.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/WoodFire.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/LessonOne.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/UsernameValidation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/Result.java" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
@@ -36,9 +27,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/abfactory/Bakery.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/abfactory/Bakery.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/abfactory/DanishBakery.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/abfactory/DanishBakery.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/abfactory/LessonOne.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/abfactory/LessonOne.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/LessonOne.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/LessonOne.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/UsernameValidation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/UsernameValidation.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,12 +51,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LessonOne.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/LessonOne.java">
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/Result.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-              <folding />
+              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+              <folding>
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +75,8 @@
         <option value="JUnit4 Test Class" />
         <option value="AnnotationType" />
         <option value="valueResourceFile" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -2712,7 +2707,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/demos/ClientThree.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/demos/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/demos/UserRepo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/demos/UserDto.java" />
@@ -2760,9 +2754,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/Food.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/WoodFire.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/Burnt.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/MakeshiftOven.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/UsernameValidation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/LessonOne.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/MakeshiftOven.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/Result.java" />
       </list>
     </option>
   </component>
@@ -3329,16 +3324,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/demos/UserRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/demos/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -3771,19 +3756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/UsernameValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#498#499#0" expanded="false" />
-            <element signature="e#549#550#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#654#655#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/adapter/MakeshiftOven.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -3792,11 +3764,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/UsernameValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/LessonOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        <state relative-caret-position="120">
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jangwoo/demoe/fp/conditions/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
