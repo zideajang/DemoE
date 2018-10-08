@@ -7,14 +7,24 @@ public class UsernameValidation {
 
     static final Pattern usernamePattern = Pattern.compile("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
 
-    static final Function<String,Boolean> usernameChecker = s ->
-            usernamePattern.matcher(s).matches();
+    static final Function<String,Result> usernameChecker = s -> {
+        if(s == null){
+            return new Result.Failure("用户名不能为 null");
+        }else if(s.length() == 0){
+            return new Result.Failure("用户名不能为空");
+        }else if(usernamePattern.matcher(s).matches()){
+            return new Result.Success();
+        }else {
+            return new Result.Failure("用户名格式不正确");
+        }
+    };
 
     public static void evauluateUsernameFP(String s){
-        if(usernameChecker.apply(s)){
+        Result result = usernameChecker.apply(s);
+        if(result instanceof Result.Success){
             showMessage("用户名格式正确");
         }else {
-            showWarning("用户名格式不正确");
+            showWarning(((Result.Failure)result).getErrorMessage());
         }
     }
 
