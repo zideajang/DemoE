@@ -11,7 +11,13 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity" />
         <activity android:name=".home.HomeActivity" />
-        <activity android:name=".splash.SplashActivity" />
+        <activity android:name=".splash.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".DemoTwoActivity" />
         <activity android:name=".DemoThreeActivity" />
         <activity android:name=".DemoFiveActivity" />
@@ -20,11 +26,6 @@
         <activity android:name=".DemoSevenActivity">
         </activity>
         <activity android:name=".DemoEightActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
     </application>
