@@ -1,10 +1,11 @@
 package com.example.jangwoo.demoe;
 
 
+import java.lang.ref.WeakReference;
 
 public class Singleton {
     private static Singleton singleton;
-    private Callback callback;
+    private WeakReference<Callback> callback;
 
     public static Singleton getInstance(){
         if(singleton == null){
@@ -14,11 +15,11 @@ public class Singleton {
     }
 
     public Callback getCallback() {
-        return callback;
+        return callback.get();
     }
 
     public void setCallback(Callback callback) {
-        this.callback = callback;
+        this.callback = new WeakReference<>(callback);
     }
 
     public interface Callback{

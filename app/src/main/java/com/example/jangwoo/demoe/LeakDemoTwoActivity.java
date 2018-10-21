@@ -26,6 +26,12 @@ public class LeakDemoTwoActivity extends AppCompatActivity implements Singleton.
 
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Singleton.getInstance().setCallback(null);
+    }
+
     private static class MyAsyncTask extends AsyncTask{
 
         private WeakReference<LeakDemoTwoActivity> leakDemoTwoActivityWeakReference;
