@@ -8,7 +8,7 @@ import android.view.View;
 
 import java.lang.ref.WeakReference;
 
-public class LeakDemoTwoActivity extends AppCompatActivity {
+public class LeakDemoTwoActivity extends AppCompatActivity implements Singleton.Callback{
 
 
 
@@ -17,7 +17,13 @@ public class LeakDemoTwoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_demo_two);
-        new MyAsyncTask(this).execute();
+//        new MyAsyncTask(this).execute();
+        Singleton.getInstance().setCallback(this);
+    }
+
+    @Override
+    public void callback() {
+
     }
 
     private static class MyAsyncTask extends AsyncTask{
