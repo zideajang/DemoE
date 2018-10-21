@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.lang.ref.WeakReference;
+
 public class LeakDemoTwoActivity extends AppCompatActivity {
 
 
@@ -15,10 +17,16 @@ public class LeakDemoTwoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_demo_two);
-        new MyAsyncTask().execute();
+        new MyAsyncTask(this).execute();
     }
 
-    private class MyAsyncTask extends AsyncTask{
+    private static class MyAsyncTask extends AsyncTask{
+
+        private WeakReference<LeakDemoTwoActivity> leakDemoTwoActivityWeakReference;
+
+        public MyAsyncTask(LeakDemoTwoActivity leakDemoTwoActivityWeakReference) {
+            this.leakDemoTwoActivityWeakReference = new WeakReference<>(leakDemoTwoActivityWeakReference);
+        }
 
         @Override
         protected Object doInBackground(Object[] objects) {
@@ -27,6 +35,14 @@ public class LeakDemoTwoActivity extends AppCompatActivity {
 
         private Object doSomeStuff(){
             return new Object();
+        }
+
+        @Override
+        protected void onPostExecute(Object o) {
+            super.onPostExecute(o);
+            if(leakDemoTwoActivityWeakReference.get() != null){
+
+            }
         }
     }
 }
