@@ -1,8 +1,10 @@
 package com.example.jangwoo.demoe;
 
+import android.app.FragmentManager;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableString;
@@ -11,6 +13,8 @@ import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.jangwoo.demoe.fragments.AFragment;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -21,6 +25,7 @@ import butterknife.ButterKnife;
 
 public class LeakDemoTwoActivity extends AppCompatActivity {
 
+    private static final String COMMON_TAG = "common";
     private static final String TAG = "LeakDemoTwoActivity";
 
 
@@ -31,7 +36,13 @@ public class LeakDemoTwoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_demo_two);
 
+
+        Log.d(TAG, "onCreate: ");
         ButterKnife.bind(this);
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.add(R.id.leak_demo_two_frameLayout,new AFragment());
+        transaction.commit();
 
         String tag = "应用\t前端\t编程";
 

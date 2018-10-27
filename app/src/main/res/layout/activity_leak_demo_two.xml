@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".LeakDemoTwoActivity">
 
+    <FrameLayout
+        android:id="@+id/leak_demo_two_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     <TextView
         android:gravity="center"
         android:id="@+id/leak_demo_two_title_textView"

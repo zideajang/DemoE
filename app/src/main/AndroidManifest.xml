@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jangwoo.demoe">
 
+    package="com.example.jangwoo.demoe">
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -21,13 +22,14 @@
         <activity android:name=".DemoSevenActivity" />
         <activity android:name=".DemoEightActivity" />
         <activity android:name=".LeakDemoOneActivity" />
-        <activity android:name=".TimeTickerActivity">
-
-        </activity>
+        <activity android:name=".TimeTickerActivity"></activity>
         <activity
             android:name=".TransparentActivity"
             android:background="#80000000" />
         <activity android:name=".LeakDemoTwoActivity">
+
+        </activity>
+        <activity android:name=".RxDemoOneActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
