@@ -3,14 +3,23 @@ package com.example.jangwoo.demoe;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
+
+import com.example.jangwoo.demoe.demos.User;
+import com.example.jangwoo.demoe.statereactive.UserManager;
+import com.example.jangwoo.demoe.statereactive.UserManagerImpl;
 
 import java.io.IOException;
 
+import io.reactivex.Completable;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
+import io.reactivex.Single;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Cancellable;
 import io.reactivex.functions.Consumer;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -23,10 +32,48 @@ public class RxDemoOneActivity extends AppCompatActivity {
     private  Call mCall;
     private static final String TAG = "RxDemoOneActivity";
 
+
+    private View paintView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rx_demo_one);
+
+        UserManager um = new UserManagerImpl();
+
+        TextView textView = findViewById(R.id.rx_demo_username_textView);
+        textView.setText(um.getUser().toString());
+
+        um.setName("zidea", new UserManager.Listener() {
+            @Override
+            public void success(User user) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(isDestroyed()){
+                            textView.setText(um.getUser().toString());
+                        }
+                    }
+                });
+
+            }
+
+            @Override
+            public void failure(IOException e) {
+                Log.d(TAG, "failure: " + e.getMessage());
+            }
+        });
+
+
+
+
+        Observable observableHello = Observable.just("hell");
+
+        Observable observableRange = Observable.range(0,10);
+
+        Completable completable = observableRange.ignoreElements();
+        Single single = observableRange.first(null);
 
         OkHttpClient client = new OkHttpClient();
         Request.Builder builder = new Request.Builder()
@@ -41,6 +88,13 @@ public class RxDemoOneActivity extends AppCompatActivity {
 
             @Override
             public void subscribe(ObservableEmitter<String> emitter) throws Exception {
+
+                emitter.setCancellable(new Cancellable() {
+                    @Override
+                    public void cancel() throws Exception {
+                        mCall.cancel();
+                    }
+                });
 
                 mCall.enqueue(new Callback() {
                     @Override

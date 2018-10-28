@@ -2,6 +2,7 @@ package com.example.jangwoo.demoe.demos;
 
 public class User {
     private String name;
+    private int age;
     private String carrer;
 
     public User() {
@@ -26,5 +27,13 @@ public class User {
 
     public void setCarrer(String carrer) {
         this.carrer = carrer;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
